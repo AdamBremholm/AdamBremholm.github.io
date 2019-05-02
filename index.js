@@ -491,7 +491,8 @@ const Die = {
       let idPlusOne = this.di.id + 1;
       if (!this.di.locked && store.state.rollsLeft === 3)
         return "di " + "di" + idPlusOne;
-      else if (store.state.rollingInProgress && !this.di.locked) return "di " + "di" + idPlusOne;
+      else if (store.state.rollingInProgress && !this.di.locked)
+        return "di " + "di" + idPlusOne;
       else if (!this.di.locked && this.$store.state.animation === false)
         return "blink-infinite pointer di " + "di" + idPlusOne;
       else if (!this.di.locked && this.$store.state.animation === true)
@@ -705,7 +706,6 @@ const Item = {
         if (this.activeItemExists && this.activeItemId != this.it.id) {
           let index = this.activeItemId - 1;
           store.commit("unlockItem", index);
-         
         }
         if (this.$store.state.scoreCard[this.it.id - 1].locked === false) {
           let payload = { index: this.it.id - 1, value: this.displayScore };
@@ -792,9 +792,7 @@ const Actions = {
       return this.$store.state.animation;
     },
     classObject() {
-     
       if (this.ahOneSlot && !this.activeItemExists && this.getRollsLeft === 0) {
-       
         return "info";
       } else if (
         this.ahOneSlot &&
