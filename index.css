@@ -18,10 +18,10 @@
     align-items: center;
     background-color: white;
     width: 95vw;
-    height: 97vh;
+    height: 90vh;
     overflow-x: hidden;
     overflow-y: hidden;
-    grid-row-gap: 10px;
+    grid-row-gap: 2px;
     grid-column-gap: 5px;
     grid-template-columns: minmax(auto, 97vw);
     grid-template-rows: 1fr 6fr 1fr 1fr;
