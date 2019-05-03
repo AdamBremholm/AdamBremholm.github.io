@@ -8,7 +8,7 @@
   }
 
   .body {
-    background-color: blanchedalmond;
+    background-color: rgb(168, 166, 161);
   }
   
   .container {
@@ -402,8 +402,8 @@
   .hidden {
     visibility: hidden;
   }
-  body {
-    background-color: blanchedalmond;
+  .body {
+    background-color: rgb(168, 166, 161);
   }
   
   .container {
